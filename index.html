@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3D CARDs</title>
+        <link rel="stylesheet" href="public/styles/main.css"/>
+
+    </head>
+    <body>
+        <main>
+            <h1>The best dogs 
+                <img src="images/paw-print.jpg"/>
+            </h1>
+
+            <section class="container">
+
+                <div class="card">
+                    <h2 class="name">Junior</h2>
+                    <h2 class="last-name">Maia
+                         <img src="images/paw-signature.jpg"/>
+                    </h2>
+
+                    <div class="circle"></div>
+
+                    <img src="images/junior.jpeg" class="dog"/>
+                </div>
+
+                <div class="card">
+                    <h2 class="name">Pirata</h2>
+                    <h2 class="last-name">Maia
+                         <img src="images/paw-signature.jpg"/>
+                    </h2>
+
+                    <div class="circle"></div>
+
+                    <img src="./images/pirata.jpeg" class="dog"/>
+                </div>
+                <div class="card">
+                    <h2 class="name">Totó</h2>
+                    <h2 class="last-name">Maia
+                         <img src="images/paw-signature.jpg"/>
+                    </h2>
+
+                    <div class="circle"></div>
+
+                    <img src="./images/toto.jpg" class="dog"/>
+                </div>
+
+                <div class="card">
+                    <h2 class="name">Guerreiro</h2>
+                    <h2 class="last-name">Maia
+                         <img src="images/paw-signature.jpg"/>
+                    </h2>
+
+                    <div class="circle"></div>
+
+                    <img src="./images/guerreiro-face.png" class="dog"/>
+                </div>
+
+            </section>
+
+        </main>
+
+        <script type="text/javascript" src="public/vanilla-tilt.min.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll('.card'), {
+                max: 25,
+                speed: 400
+            });
+        </script>
+    </body>
+
+</html>

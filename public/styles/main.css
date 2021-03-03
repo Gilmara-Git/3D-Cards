@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@100;300&display=swap');
+
+* { 
+
+    margin: 0;    
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Taviraj", "sans-serif;"
+
+}
+
+body { 
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    background: #131313;
+
+
+    /* width: 100%;
+    max-width: 750px;
+    padding: 32px;
+    height: 50vh;
+    margin: auto; */
+    
+}
+
+main h1 {
+
+    width: 100%;
+    text-align: center;
+    color:rgb(221, 240, 208);
+}
+
+main h1 img {
+
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    margin-left: 2px;
+}
+
+section.container {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ 
+
+    /* display: flex;    
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap; */
+    width: 800px;
+    transform-style: preserve-3d;
+
+    position: relative;
+   
+    
+}
+
+
+
+section.container .card {
+/* 
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: space-between; */
+    background-color: #232323;
+    
+    
+    height: 400px;
+    width: 300px;
+   
+    margin: 40px;
+
+    position: relative;
+    border-radius: 20px;
+
+    position: relative;
+
+    transform-style: preserve-3d;
+ 
+    
+
+}
+
+
+section.container .card::before {
+
+    content: "I AM";
+    position: absolute;
+    top: 2px;
+    left: 100px;
+    width: 100%;
+    font-size: 2em;
+    font-weight:900;
+    color: rgb(221, 240, 208);
+    font-style: italic;
+    opacity: 0;
+    letter-spacing: 1px;
+    transition: 400ms;
+   
+
+
+}
+
+
+
+section.container .card::after{
+
+    content: "SPECIAL";
+    position: absolute;
+    bottom: 2px;
+    left: 90px;    
+    font-size: 2em;    
+    font-weight:900;
+    color: rgb(221, 240, 208);
+    font-style: italic;
+    opacity: 0;
+    transition: 400ms;
+    
+
+}
+
+section.container .card:hover::before,
+section.container .card:hover::after {
+
+    opacity: 0.09;
+}
+
+
+
+section.container .card h2.name {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    width: 100%;
+    text-align: center;
+
+    color: #fff;
+
+    transform: translate3d(0,0,75px);
+    transform-style: preserve-3d;
+    z-index: 10;
+
+    transition: 400ms;
+    opacity: 0;
+    
+
+}
+
+
+section.container .card h2.last-name img {
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin-left: 2px;
+  
+    
+}
+
+section.container .card:hover h2.name {
+
+    opacity: 1;
+    top: 50px;
+   
+
+}
+
+section.container .card h2.last-name{
+
+    position: absolute;
+    bottom: 0;  
+    left:0; 
+    color: #fff;  
+
+    text-align: center;
+    width: 100%;
+
+    transform: translate3d(0,0,75px);
+    transform-style: preserve-3d;
+    z-index: 10;
+
+    transition: 400ms;
+    opacity: 0;
+
+} 
+
+section.container .card:hover h2.last-name {
+    bottom:50px;
+    opacity: 1;
+}
+
+
+
+section.container .card .circle {
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width:200px;
+    height: 200px;
+    border-radius:50%;
+    background: rgb(221, 240, 208);
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 50px);
+    z-index: 10;
+    
+    
+
+}
+
+section.container .card .dog {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100px;
+    
+    transition: 400ms;
+
+    z-index:11;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 50px) rotate(15deg);
+
+    border-radius: 5px;
+
+}
+
+section.container .card:hover .dog {
+
+    transform: translate3d(-50%, -50%, 50px) rotate(-15deg);
+}
